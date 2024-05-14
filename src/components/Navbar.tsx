@@ -23,11 +23,11 @@ const Navbar = () => {
                     variant: "ghost",
                   })}
                 >
-                  Logout
+                  Sign out
                 </Link>
                 {isAdmin ? (
                   <Link
-                    href="/api/auth/logout"
+                    href="/dashboard"
                     className={buttonVariants({
                       size: "sm",
                       variant: "ghost",
@@ -43,7 +43,7 @@ const Navbar = () => {
                     className: "hidden sm:flex items-center gap-1",
                   })}
                 >
-                  Create Case
+                  Create case
                   <ArrowRight className="ml-1.5 h-5 w-5" />
                 </Link>
               </>
@@ -56,7 +56,7 @@ const Navbar = () => {
                     variant: "ghost",
                   })}
                 >
-                  Sign Up
+                  Sign up
                 </Link>
 
                 <Link
@@ -68,7 +68,9 @@ const Navbar = () => {
                 >
                   Login
                 </Link>
+
                 <div className="h-8 w-px bg-zinc-200 hidden sm:block" />
+
                 <Link
                   href="/configure/upload"
                   className={buttonVariants({
@@ -76,7 +78,7 @@ const Navbar = () => {
                     className: "hidden sm:flex items-center gap-1",
                   })}
                 >
-                  Create Case
+                  Create case
                   <ArrowRight className="ml-1.5 h-5 w-5" />
                 </Link>
               </>
