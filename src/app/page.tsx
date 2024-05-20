@@ -5,7 +5,7 @@ import { Icons } from "@/components/Icons";
 import { ArrowRight, Check, Star } from "lucide-react";
 import Link from "next/link";
 import { buttonVariants } from "@/components/ui/button";
-
+import "@radix-ui/themes/styles.css";
 export default function Home() {
   return (
     <div className="bg-slate-50">
@@ -17,7 +17,7 @@ export default function Home() {
                 <img src="/snake-1.png" className="w-full"></img>
               </div>
               <h1 className="relative w-fit tracking-tight text-balance mt-16 font-bold !leading-tight text-gray-900 text-5xl md:text-6xl lg:text-7xl ">
-                You Image on a{" "}
+                Your Image on a{" "}
                 <span className="bg-green-600 px-2 text-white">Custom</span>{" "}
                 Phone Case.
               </h1>
